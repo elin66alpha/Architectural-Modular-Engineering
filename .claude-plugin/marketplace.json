@@ -1,0 +1,11 @@
+{
+  "name": "engineering-discipline",
+  "owner": { "name": "YILIN" },
+  "description": "Engineering discipline for agent-coded software projects.",
+  "plugins": [
+    {
+      "name": "engineering-discipline",
+      "source": "."
+    }
+  ]
+}

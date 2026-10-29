@@ -1,8 +1,8 @@
 {
   "name": "engineering-discipline",
   "displayName": "Engineering Discipline",
-  "version": "0.1.0",
-  "description": "An engineering contract for agent-coded software: plan before code, every feature placed in the architecture, periodic review for dead code, doc noise and drift.",
+  "version": "0.1.1",
+  "description": "Keeps an architecture map for agent-coded software: every feature placed in a category and module, plus an on-demand audit for clutter, doc noise and drift.",
   "author": { "name": "YILIN" },
   "license": "MIT",
   "keywords": ["engineering", "architecture", "maintainability", "agent-coding"]

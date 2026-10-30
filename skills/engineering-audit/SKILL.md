@@ -84,6 +84,6 @@ message is the full report; the invoking conversation relays it as written.
 
 If the repository has no `ENGINEERING.md`, end the report with the map laid
 out in the structure of
-`${CLAUDE_PLUGIN_ROOT}/skills/engineering-discipline/references/ENGINEERING.template.md`
+`${CLAUDE_PLUGIN_ROOT}/skills/architectural-modular-engineering/references/ENGINEERING.template.md`
 as a proposed `ENGINEERING.md`. The invoking conversation writes it after
 the user confirms.

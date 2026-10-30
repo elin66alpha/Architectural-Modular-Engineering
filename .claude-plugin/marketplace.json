@@ -1,10 +1,10 @@
 {
-  "name": "engineering-discipline",
+  "name": "architectural-modular-engineering",
   "owner": { "name": "YILIN" },
-  "description": "Engineering discipline for agent-coded software projects.",
+  "description": "Architecture map and repository audit for agent-coded software projects.",
   "plugins": [
     {
-      "name": "engineering-discipline",
+      "name": "architectural-modular-engineering",
       "source": "."
     }
   ]

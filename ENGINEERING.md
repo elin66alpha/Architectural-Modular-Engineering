@@ -13,7 +13,7 @@ describes what exists now: no history, no plans.
 
 ### Skills (`skills/`)
 
-- **engineering-discipline** (`skills/engineering-discipline/`): places each feature or module in ENGINEERING.md and records it
+- **architectural-modular-engineering** (`skills/architectural-modular-engineering/`): places each feature or module in ENGINEERING.md and records it
   - Place a change in a category and module before code
   - Record features and modules in the same change
   - Propose an ENGINEERING.md for a repository without one
@@ -31,4 +31,4 @@ describes what exists now: no history, no plans.
 
 ## Run & check
 
-- `claude --plugin-dir .` (from the repository root) -> the session context contains "Engineering discipline: ENGINEERING.md maps this project's categories, modules, and features."
+- `claude --plugin-dir .` (from the repository root) -> the session context contains "Architectural and Modular Engineering: ENGINEERING.md maps this project's categories, modules, and features."

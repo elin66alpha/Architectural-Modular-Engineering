@@ -1,5 +1,5 @@
 ---
-name: engineering-discipline
+name: architectural-modular-engineering
 description: >
   Keeps ENGINEERING.md, the map of a repository's architecture: categories,
   the modules in each, the features in each module. Places every new feature
@@ -10,7 +10,7 @@ description: >
   for a single-file script with no external callers.
 ---
 
-# Engineering Discipline
+# Architectural and Modular Engineering
 
 `ENGINEERING.md` at the repository root maps the architecture: categories,
 the modules in each category, the features in each module. Its structure is

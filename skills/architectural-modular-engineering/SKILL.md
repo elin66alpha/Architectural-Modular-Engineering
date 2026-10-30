@@ -20,6 +20,10 @@ This skill puts each new feature or module where it belongs and records it.
 It does not judge whether a feature is worth building, and it sets no style
 for the code.
 
+Works in Claude Code and Codex. Resolve reference paths relative to this
+skill's directory. In Codex, check for `ENGINEERING.md` directly; the Claude
+Code session hook is not required.
+
 A single-file script with no external callers is exempt. Say so in one
 sentence and proceed normally.
 
@@ -28,8 +32,8 @@ sentence and proceed normally.
 - Empty repository: propose the first categories and modules for what the
   user asked, in a few lines. Write `ENGINEERING.md` and code after the user
   confirms.
-- Existing code: invoke the `engineering-audit` skill with the user's
-  language as its argument. It returns a proposed `ENGINEERING.md` mapped
+- Existing code: load the companion `engineering-audit` skill and request
+  the report in the user's language. It returns a proposed `ENGINEERING.md` mapped
   from the code. Write it after the user confirms. If the user declines,
   proceed without it.
 - Bug fixes and documentation fixes proceed without it.
@@ -71,9 +75,10 @@ In the same change as the code:
 
 ## Agent instruction files
 
-When `ENGINEERING.md` is first written, add this line to `CLAUDE.md` and to
-`AGENTS.md` where each exists; if neither exists, create `CLAUDE.md` with
-only this line. Tell the user which file changed.
+When `ENGINEERING.md` is first written, add this line to existing
+`CLAUDE.md` and `AGENTS.md` files without duplicating it. Ensure the current
+host's file exists: `AGENTS.md` for Codex, `CLAUDE.md` for Claude Code;
+create it with only this line if missing. Tell the user which files changed.
 
 `Read ENGINEERING.md before any change. It maps this repository's categories, modules, and features.`
 

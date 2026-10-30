@@ -15,10 +15,15 @@ background: false
 
 # Engineering Audit
 
-You run in an isolated context. Judge only from the repository and what you
-run yourself, not from any account of recent work.
+In Claude Code, the frontmatter requests an isolated context. In Codex,
+these Claude-specific fields do not configure execution; perform the audit
+in the current context unless the user requests a separate agent. In either
+host, judge only from the repository and what you run yourself, not from any
+account of recent work.
 
-Report language: $ARGUMENTS. If none is given, write in English.
+Use the report language requested by the user or invoking conversation
+(Claude Code supplies it through `$ARGUMENTS`). Otherwise use the user's
+language; if that is unknown, write in English.
 
 The goal is a workspace a new teammate can open, understand, and work in.
 Less is more: the usual fix is a deletion. Write nothing to the repository.
@@ -84,6 +89,7 @@ message is the full report; the invoking conversation relays it as written.
 
 If the repository has no `ENGINEERING.md`, end the report with the map laid
 out in the structure of
-`${CLAUDE_PLUGIN_ROOT}/skills/architectural-modular-engineering/references/ENGINEERING.template.md`
-as a proposed `ENGINEERING.md`. The invoking conversation writes it after
-the user confirms.
+`../architectural-modular-engineering/references/ENGINEERING.template.md`
+as a proposed `ENGINEERING.md`. Resolve the path relative to this skill's
+directory; install both skills together. The invoking conversation writes
+the map after the user confirms.

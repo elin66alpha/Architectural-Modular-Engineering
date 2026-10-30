@@ -1,7 +1,7 @@
 {
   "name": "architectural-modular-engineering",
   "displayName": "Architectural and Modular Engineering",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Keeps an architecture map for agent-coded software: every feature placed in a category and module, plus an on-demand audit for clutter, doc noise and drift.",
   "author": { "name": "YILIN" },
   "license": "MIT",

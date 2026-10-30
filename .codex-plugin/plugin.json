@@ -1,0 +1,21 @@
+{
+  "name": "architectural-modular-engineering",
+  "version": "0.3.0",
+  "description": "Keep a repository architecture map and audit layout, documentation, and leftover files.",
+  "author": { "name": "YILIN" },
+  "repository": "https://github.com/elin66alpha/Architectural-Modular-Engineering",
+  "license": "MIT",
+  "keywords": ["engineering", "architecture", "maintainability", "agent-coding"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Architectural and Modular Engineering",
+    "shortDescription": "Maintain architecture maps and audit repository clutter",
+    "developerName": "YILIN",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Use architectural-modular-engineering to place this feature in the architecture map.",
+      "Use engineering-audit to review this repository and report in my language."
+    ]
+  }
+}

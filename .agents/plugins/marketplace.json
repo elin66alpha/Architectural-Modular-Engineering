@@ -1,0 +1,17 @@
+{
+  "name": "architectural-modular-engineering",
+  "interface": {
+    "displayName": "Architectural and Modular Engineering"
+  },
+  "plugins": [
+    {
+      "name": "architectural-modular-engineering",
+      "source": { "source": "local", "path": "./" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
